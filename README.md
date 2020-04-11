@@ -69,4 +69,3 @@ There were many cout and cin statements in the program which the client needed t
 - You will be provided with two options to play game. One to play with computer, another to just watch two computers play.
 - Once a game is finished, the user can type y to play again or any other key to exit.
 
-<video src="gittest.mp4" poster="poster.jpg" width="320" height="200" controls preload></video>
