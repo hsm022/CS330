@@ -1,12 +1,11 @@
-/*****************************************************************
+/*****************************************************************************************
   Sockets Client Program 
 
-  This code is a modified version taken from Nigel Horspool's "The Berkeley
-  Unix Environment".
+  The code is a modified version of code from CS330 lab 7 (sockets) class. 
 
   This client connects to a specified server (host) and receives
   information from it.
-*****************************************************************/
+******************************************************************************************/
 
 #include <stdio.h>
 #include <string.h>
@@ -73,13 +72,13 @@ int main(int argc, char *argv[])
  
       pid_t fork_return = fork();
 
-          if (fork_return == 0) /* child process */ 
+          if (fork_return == 0) /* child process (Read from stdin and write to scoket) */ 
           { while((num_char=read(0,ch,MAXLINE))> 0)
               if (write(s,ch,num_char) < num_char)
                 OOPS("writing");
             exit(0); 
           } 
-          else if (fork_return > 0) /* parent process */ 
+          else if (fork_return > 0) /* parent process (read from socket and write to stdout)*/ 
           { 
             while((num_char=read(s,ch,MAXLINE))> 0)
             if (write(1,ch,num_char) < num_char)
