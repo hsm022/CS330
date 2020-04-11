@@ -45,11 +45,27 @@ There were many cout and cin statements in the program which the client needed t
 
 **Server**
 
-- Make sure all the files (except client.cpp) are in same folder. The server.cpp needs all the other files of the project except client.cpp to work properly or to even compile.
+* **On a regular linux machine**
+- Make sure all the files (client.cpp can be excluded) are in same folder. The server.cpp needs all the other files of the project except client.cpp to work properly or to even compile.
 - Create an executable file (.o file) by running g++ server.cpp -o server , depending on your complier you might see some warnings(not errors) but they can be ignored. 
+- Run the file ./server
+- The screen will display the socket number, provide this socket number to clients so they can connect to the server.
+
+
+ * **On hercules**
+- Use touch .newgcc
+- Logout of hercules and logback in.
+- Make sure all the files (client.cpp can be excluded) are in same folder. The server.cpp needs all the other files of the project except client.cpp to work properly or to even compile.
+- Create an executable file (.o file) by running g++ -std=c++11 server.cpp -o server
+- Run the file ./server
+- The screen will display the socket number, provide this socket number to clients so they can connect to the server.
 
 **Client**
 
 - Create an executable file (.o file) by running g++ client.cpp -o client
-- Run the file. ./client
-- Provide the host name and the port number provided by the socket.
+- Run the file ./client
+- Enter the host name. (if the server is running on hercules use hercules.cs.uregina.ca)
+- Enter the port number provided by the server.
+- You will be provided with two options to play game. One to play with computer, another to just watch two computers play.
+- Once a game is finished, the user can type y to play again or any other key to exit.
+
