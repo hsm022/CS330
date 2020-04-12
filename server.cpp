@@ -167,6 +167,8 @@ int main()
               }
             } while (select != 1 && select != 2);
             
+            cin.clear();
+            cin.ignore();
             if (select == 1)  // if user wants to play against computer
             {
               p1 = new PlayerHuman;
@@ -191,6 +193,8 @@ int main()
               p2->setSymbol('O');
               player2 = "Second Computer's Turn (O)";
               winner2 = "Second computer Wins (O)";
+             
+             cout << "***Keep pressing Enter to let a computer take it's turn***" << endl;
             }
             
             do {
