@@ -13,7 +13,7 @@ The project is based on the sockets topic. There are two files in the project th
 The first one is server.cpp. This file uses both c and c++ code. The file creates a socket which can accept clients and displays the sockets port number on the screen. The server.cpp uses all the other files in the project except client.cpp to run and to let clients play the Tic Tac Toe game. The server.cpp can handle multiple clients at the same time. Once a client disconnects or the user finishes playing the game, the socket is closed.
 
 **client.cpp :**
-The second file is client.cpp.This file also creates a socket and sends a request to connect to the server.cpp's generated port. The client.cpp files asks the user to enter the name of a the host and the socket before making a connection. Once a connection is made, the inputs of the user are transferred from client to server through socket and the messages from server that come through to the socket to client are display on to the clients screen.
+The second file is client.cpp. This file also creates a socket and sends a request to connect to the server.cpp's generated port. The client.cpp files asks the user to enter the name of a the host and the socket before making a connection. Once a connection is made, the inputs of the user are transferred from client to server through socket and the messages from server that come through to the socket to client are display on to the clients screen.
 
 **Other files used by socket.cpp**
 
@@ -68,4 +68,8 @@ There were many cout and cin statements in the program which the client needed t
 - Enter the port number provided by the server.
 - You will be provided with two options to play game. One to play with computer, another to just watch two computers play.
 - Once a game is finished, the user can type y to play again or any other key to exit.
+
+## Sample Run on youtube
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/j0edpAOKHL0/0.jpg)](https://www.youtube.com/watch?v=j0edpAOKHL0)
 
