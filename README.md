@@ -50,6 +50,7 @@ There were many cout and cin statements in the program which the client needed t
 - Create an executable file (.o file) by running g++ server.cpp -o server , depending on your complier you might see some warnings(not errors) but they can be ignored. 
 - Run the file ./server
 - The screen will display the socket number, provide this socket number to clients so they can connect to the server.
+- If you want to close the server program, Press ctrl c to exit the program and close all connections.
 
 
 **On hercules**
@@ -61,6 +62,7 @@ There were many cout and cin statements in the program which the client needed t
 - Create an executable file (.o file) by running g++ -std=c++11 server.cpp -o server
 - Run the file ./server
 - The screen will display the socket number, provide this socket number to clients so they can connect to the server.
+- If you want to close the server program, Press ctrl c to exit the program and close all connections.
 
 ## Client
 
